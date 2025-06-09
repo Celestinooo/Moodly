@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#353535"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#353535"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_icon"
+            android:clickable="true"
+            android:focusable="true" />
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mood"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_is_your_day"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <Spinner
+            android:id="@+id/spinner_moods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1F1F1F"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/edit_note"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="@string/talk_about_your_day"
+            android:textColor="@android:color/white"
+            android:textColorHint="#AAAAAA"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:padding="8dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

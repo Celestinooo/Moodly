@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="#353535"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <LinearLayout
+            android:id="@+id/llActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="2025-06-09"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/button_edit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/edit"
+                app:tint="@android:color/white" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="0dp"/>
+
+            <ImageButton
+                android:id="@+id/button_delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/delete"
+                app:tint="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llActions"
+            android:layout_marginVertical="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_mood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mood: GOOD"
+                android:textSize="14sp"
+                android:textColor="#C7C7C7"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/text_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foi um dia bacana, fiz tudo que eu queria."
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

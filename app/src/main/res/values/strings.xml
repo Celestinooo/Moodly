@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Moodly</string>
+    <string name="add">Add</string>
+    <string name="history">Histórico</string>
+    <string name="save">Salvar</string>
+    <string name="talk_about_your_day">Fale sobre seu dia...</string>
+    <string name="how_is_your_day">Como você está hoje?</string>
+    <string name="mood">Mood</string>
+</resources>
